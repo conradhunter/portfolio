@@ -1,0 +1,82 @@
+footer {
+  background-image: url("../../Assets/shiny-overlay.svg");
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center;
+}
+
+#links__container {
+    max-width: 200px;
+    width: 100%;
+}
+
+#footer__link--heading {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+#footer__link--list {
+  list-style-type: none;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#copyright__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#copyright__para {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#footer__logo {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+#scroll__icon {
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#footer__socials--heading {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__icon {
+    color: #62e1e9;
+    font-size: 26px;
+    padding: 0 8px;
+    transition: all 300ms ease;
+}
+
+.footer__icon:hover {
+    color: #0652e9;
+}
+
+#socials__container {
+    display: flex;
+    max-width: 200px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,120 @@
+nav {
+  background-image: url("../../Assets/Clouds-250s-2245px.svg");
+  width: 100%;
+  padding-top: 30px;
+  height: 100vh;
+}
+
+#top__nav--container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#nav__links--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#nav__bar--links {
+  display: flex;
+  list-style-type: none;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+#nav__bar--links li {
+    position: relative;
+}
+
+.nav__bar--link {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  padding: 15px 20px;
+}
+
+.nav__bar--link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav__bar--link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#nav__logo {
+  max-width: 100px;
+  margin-bottom: 30px;
+}
+
+#aboutMe__info--container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    position: absolute;
+    top: 40%;
+}
+
+#about__me--heading {
+    color: #ffffff;
+    font-size: 50px;
+    max-width: 525px;
+    margin-bottom: 25px;
+}
+
+#about__me--para {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 310px;
+}
+
+#icon__container {
+    margin-bottom: 25px;
+}
+
+.home__icon {
+    color: #62e1e9;
+    font-size: 36px;
+    padding: 0 10px;
+    transition: all 300ms ease;
+}
+
+.home__icon:hover {
+    color: #0652e9;
+}
+
+.hover__text--underline {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover__text--underline::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 4px;
+    width: 0;
+    right: 0;
+    background-color: #a62c2c;
+    transition: all 1000ms ease;
+}
+
+.hover__text--underline:hover::after {
+    left: 0;
+    width: 100%;
+}

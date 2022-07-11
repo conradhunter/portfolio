@@ -15,3 +15,19 @@
   font-family: "Roboto Slab", serif;
   font-family: inherit;
 }
+
+.row {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  overflow: scroll;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #62e1e9;
+  border-radius: 10px;
+}

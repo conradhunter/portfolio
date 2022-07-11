@@ -8,15 +8,6 @@ import { faComputerMouse, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
-
-    function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-
-
     return (
         <footer>
             <div id="links__container">
@@ -51,7 +42,7 @@ const Footer = () => {
                     </Link>
                 </figure>
                 <p id='copyright__para'>Copyright&copy; Conrad Hunter 2022</p>
-                <FontAwesomeIcon onClick={scrollToTop()}  id='scroll__icon' icon={faComputerMouse} />
+                <FontAwesomeIcon id='scroll__icon' icon={faComputerMouse} />
             </div>
             <div id="socials__container">
                 <h4 id="footer__socials--heading">Get in touch!</h4>

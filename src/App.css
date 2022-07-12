@@ -14,6 +14,7 @@
   font-family: "Roboto Mono", monospace;
   font-family: "Roboto Slab", serif;
   font-family: inherit;
+  scroll-behavior: smooth;
 }
 
 .row {

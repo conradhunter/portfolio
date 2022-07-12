@@ -1,0 +1,37 @@
+#contact__page {
+    padding: 100px 0;
+}
+
+#contact__content--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact__heading {
+    font-size: 38px;
+    color: #a62c2c;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#contact__img {
+    max-width: 500px;
+}
+
+#contact__email--link {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#contact__page--link-list {
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.contact__icon {
+    font-size: 34px;
+    color: #a62c2c;
+    padding: 10px;
+}

@@ -4,7 +4,8 @@ import logo from "../../Assets/trans-words.png";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import { HashLink } from "react-router-hash-link";
 
 const Nav = () => {
   return (
@@ -23,9 +24,9 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link className="nav__bar--link" to="/projects">
+              <HashLink className="nav__bar--link" to="/#projects__blurb--container">
                 Projects
-              </Link>
+              </HashLink>
             </li>
             <li>
               <Link className="nav__bar--link" to="/blog">
@@ -54,6 +55,9 @@ const Nav = () => {
             </a>
             <a href="">
                 <FontAwesomeIcon className="home__icon" icon={faTwitter} />
+            </a>
+            <a href="">
+                <FontAwesomeIcon className="home__icon" icon={faFilePdf} />
             </a>
         </div>
         <p id="about__me--para">Always Learning 📚 I love travelling ⛰️ I spend my time skiing and coding ⛷️</p>

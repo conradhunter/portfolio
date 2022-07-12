@@ -4,7 +4,7 @@ import './footer.css';
 import footerLogo from '../../Assets/trans.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faComputerMouse, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faComputerMouse, faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
@@ -51,6 +51,7 @@ const Footer = () => {
                     <FontAwesomeIcon className="footer__icon" icon={faLinkedin} />
                     <FontAwesomeIcon className="footer__icon" icon={faEnvelope} />
                     <FontAwesomeIcon className="footer__icon" icon={faTwitter} />
+                    <FontAwesomeIcon className="footer__icon" icon={faFilePdf} />
                 </div>
             </div>
         </footer>

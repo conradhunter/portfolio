@@ -16,4 +16,49 @@
 .about__headings {
     color: #a62c2c;
     font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.about__page--para {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#about__contact--heading {
+    color: #a62c2c;
+    font-size: 22px;
+}
+
+#about__contact--link-list {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.about__contact--icon {
+    color: #000000;
+    font-size: 32px;
+    padding: 10px;
+}
+
+#skiing__img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    margin: 50px 0;
+}
+
+#skiing__img--wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#resume__heading {
+    font-size: 22px;
+}
+
+#resume__link {
+    color: #a62c2c;
+    text-decoration: none;
 }

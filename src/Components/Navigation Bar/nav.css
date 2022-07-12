@@ -1,12 +1,13 @@
 nav {
-  background-image: url("../../Assets/Clouds-250s-2245px.svg");
   width: 100%;
-  padding-top: 30px;
-  height: 100vh;
 }
 
 #top__nav--container {
-    display: flex;
+  background-color: rgb(28, 35, 35);
+  height: 180px;
+  padding-top: 30px;
+  display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -23,6 +24,7 @@ nav {
   list-style-type: none;
   width: 70%;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 #nav__bar--links li {
@@ -61,60 +63,4 @@ nav {
   margin-bottom: 30px;
 }
 
-#aboutMe__info--container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 150px;
-    position: absolute;
-    top: 40%;
-}
 
-#about__me--heading {
-    color: #ffffff;
-    font-size: 50px;
-    max-width: 525px;
-    margin-bottom: 25px;
-}
-
-#about__me--para {
-    color: aliceblue;
-    font-weight: 500;
-    font-size: 18px;
-    max-width: 310px;
-}
-
-#icon__container {
-    margin-bottom: 25px;
-}
-
-.home__icon {
-    color: #62e1e9;
-    font-size: 36px;
-    padding: 0 10px;
-    transition: all 300ms ease;
-}
-
-.home__icon:hover {
-    color: #0652e9;
-}
-
-.hover__text--underline {
-    position: relative;
-    cursor: pointer;
-}
-
-.hover__text--underline::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    height: 4px;
-    width: 0;
-    right: 0;
-    background-color: #a62c2c;
-    transition: all 1000ms ease;
-}
-
-.hover__text--underline:hover::after {
-    left: 0;
-    width: 100%;
-}

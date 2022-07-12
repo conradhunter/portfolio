@@ -7,7 +7,6 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 import { faComputerMouse, faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
-
     return (
         <footer>
             <div id="links__container">
@@ -42,7 +41,9 @@ const Footer = () => {
                     </Link>
                 </figure>
                 <p id='copyright__para'>Copyright&copy; Conrad Hunter 2022</p>
-                <FontAwesomeIcon id='scroll__icon' icon={faComputerMouse} />
+                <button id="scroll__button">
+                    <FontAwesomeIcon id='scroll__icon' icon={faComputerMouse} />
+                </button>
             </div>
             <div id="socials__container">
                 <h4 id="footer__socials--heading">Get in touch!</h4>

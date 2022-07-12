@@ -3,10 +3,40 @@ import "./home.css";
 import personalIMG from "../../Assets/my-picture.png";
 import { Link } from "react-router-dom";
 import blog from "../../Assets/blog-ss.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
     <main id="home__page--container">
+      <div id="aboutMe__info--container">
+        <h1 id="about__me--heading">
+          Hi, I'm Conrad Hunter |{" "}
+          <span className="hover__text--underline">Frontend Engineer</span>
+        </h1>
+        <div id="icon__container">
+          <a href="">
+            <FontAwesomeIcon className="home__icon" icon={faGithub} />
+          </a>
+          <a href="">
+            <FontAwesomeIcon className="home__icon" icon={faLinkedin} />
+          </a>
+          <a href="">
+            <FontAwesomeIcon className="home__icon" icon={faEnvelope} />
+          </a>
+          <a href="">
+            <FontAwesomeIcon className="home__icon" icon={faTwitter} />
+          </a>
+          <a href="">
+            <FontAwesomeIcon className="home__icon" icon={faFilePdf} />
+          </a>
+        </div>
+        <p id="about__me--para">
+          Always Learning 📚 I love travelling ⛰️ I spend my time skiing and
+          coding ⛷️
+        </p>
+      </div>
       <div className="row">
         <section id="about__me--container">
           <div id="left__container">
@@ -52,26 +82,24 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section id="projects__blurb--container">
+        <section id="projects-overview">
           <h1 id="home__projects--heading">Projects</h1>
           <div className="project__wrapper">
             <div className="project__info">
-              <h2 className="project__name">Project Name</h2>
+              <h2 className="project__name">The Shred Blog</h2>
               <ul className="project__stack">
                 <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
+                <li className="project__technology">CSS</li>
+                <li className="project__technology">JavaScript</li>
+                <li className="project__technology">React</li>
+                <li className="project__technology">Firebase</li>
               </ul>
               <p className="project__blurb">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                similique ducimus amet exercitationem dicta dolore numquam
-                corporis, consectetur tempore. Veniam tenetur necessitatibus
-                consequuntur aspernatur tempore.
+                I built this personal project to extend my knowledge within
+                React and Firebase. Firebase authentication allows the user to
+                sign-in with Google and in turn create a blog post. All blog
+                posts are uploaded to the Firebase Firestore database and
+                displayed on the website.
               </p>
               <Link to="/">
                 <button className="project__link">View Project</button>
@@ -83,49 +111,18 @@ const Home = () => {
           </div>
           <div className="project__wrapper">
             <div className="project__info">
-              <h2 className="project__name">Project Name</h2>
+              <h2 className="project__name">Skin Gym Sylvania</h2>
               <ul className="project__stack">
                 <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
+                <li className="project__technology">CSS</li>
+                <li className="project__technology">JavaScript</li>
+                <li className="project__technology">React</li>
               </ul>
               <p className="project__blurb">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                similique ducimus amet exercitationem dicta dolore numquam
-                corporis, consectetur tempore. Veniam tenetur necessitatibus
-                consequuntur aspernatur tempore.
-              </p>
-              <Link to="/">
-                <button className="project__link">View Project</button>
-              </Link>
-            </div>
-            <figure className="project__img--wrapper">
-              <img className="project__img" src={blog} alt="" />
-            </figure>
-          </div>
-          <div className="project__wrapper">
-            <div className="project__info">
-              <h2 className="project__name">Project Name</h2>
-              <ul className="project__stack">
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-              </ul>
-              <p className="project__blurb">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                similique ducimus amet exercitationem dicta dolore numquam
-                corporis, consectetur tempore. Veniam tenetur necessitatibus
-                consequuntur aspernatur tempore.
+                My first commercial project which I developed from scratch for a
+                local beauty salon. This was also my first React web application
+                and it helped me tremendously at understanding the core concepts
+                of the React library.
               </p>
               <Link to="/">
                 <button className="project__link">View Project</button>

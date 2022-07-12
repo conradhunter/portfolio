@@ -8,8 +8,8 @@ footer {
 }
 
 #links__container {
-    max-width: 200px;
-    width: 100%;
+  max-width: 200px;
+  width: 100%;
 }
 
 #footer__link--heading {
@@ -54,6 +54,11 @@ footer {
   cursor: pointer;
 }
 
+#scroll__button {
+  background: none;
+  border: none;
+}
+
 #footer__socials--heading {
   color: #ffffff;
   font-size: 18px;
@@ -63,20 +68,21 @@ footer {
 }
 
 .footer__icon {
-    color: #62e1e9;
-    font-size: 26px;
-    padding: 0 8px;
-    transition: all 300ms ease;
+  color: #62e1e9;
+  font-size: 26px;
+  padding: 0 8px;
+  transition: all 300ms ease;
 }
 
 .footer__icon:hover {
-    color: #0652e9;
+  transform: scale(1.1);
+  color: #51b1b8;
 }
 
 #socials__container {
-    display: flex;
-    max-width: 200px;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  max-width: 200px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 }

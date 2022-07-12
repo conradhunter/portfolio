@@ -1,0 +1,50 @@
+#blog__page--container {
+  padding: 75px 0;
+}
+
+#blogs__heading {
+  color: #a62c2c;
+  text-decoration: underline;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+/* POST STYLING */
+
+.post {
+  border-bottom: 2px solid black;
+  padding: 16px 16px 50px 16px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 34px;
+  color: #a62c2c;
+  margin-bottom: 10px;
+}
+
+.postCategory {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.postTags {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.postBlurb {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.postText {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.postDate {
+    font-style: italic;
+    font-weight: 500;
+
+}

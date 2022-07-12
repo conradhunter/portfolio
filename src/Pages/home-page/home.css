@@ -1,12 +1,76 @@
-/* SECTION ONE */
-#home__page--container {
-  padding: 75px 0;
+/* TOP SECTION */
+
+#aboutMe__info--container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  width: 100%;
+  height: calc(100vh - 180px);
+  padding-top: 100px;
+  background-image: url("../../Assets/Clouds-250s-2245px.svg");
 }
+
+#about__me--heading {
+  color: #ffffff;
+  font-size: 50px;
+  max-width: 525px;
+  margin-bottom: 25px;
+}
+
+#about__me--para {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 310px;
+}
+
+#icon__container {
+  margin-bottom: 25px;
+}
+
+.home__icon {
+  color: #62e1e9;
+  font-size: 36px;
+  padding: 0 10px;
+  transition: all 300ms ease;
+}
+
+.home__icon:hover {
+  transform: scale(1.10);
+  color: #51b1b8;
+}
+
+.hover__text--underline {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover__text--underline::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 4px;
+  width: 0;
+  right: 0;
+  background-color: #a62c2c;
+  transition: all 1000ms ease;
+}
+
+.hover__text--underline:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+
+
+
+/* SECTION ONE */
+
 
 #about__me--container {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 50px;
+  padding: 75px 0;
   border-bottom: 1px solid black;
 }
 
@@ -72,7 +136,7 @@
 
 /* SECTION TWO */
 
-#projects__blurb--container {
+#projects-overview {
   padding-top: 50px;
 }
 

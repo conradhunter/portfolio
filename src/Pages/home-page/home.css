@@ -142,7 +142,7 @@
 
 #home__projects--heading {
     color: #a62c2c;
-    font-size: 32px;
+    font-size: 38px;
     text-decoration: underline;
     margin-bottom: 50px;
 }
@@ -165,6 +165,8 @@
 .project__name {
     font-size: 38px;
     margin-bottom: 20px;
+    color: #a62c2c;
+    text-decoration: underline;
 }
 
 .project__blurb {
@@ -237,4 +239,8 @@
 .project__link:hover::after {
   opacity: 1;
   transform: scale(1, 1);
+}
+
+.coming__soon {
+  filter: blur(5px);
 }

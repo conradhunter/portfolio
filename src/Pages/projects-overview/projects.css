@@ -1,0 +1,70 @@
+.project__overview--page {
+  padding: 75px 0;
+}
+
+.project__title {
+  color: #a62c2c;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.project__tech--list {
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.project__sub-title {
+  color: #a62c2c;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.project__links--list {
+    list-style-type: none;
+    display: flex;
+    width: fit-content;
+}
+
+.project__links {
+    text-decoration: underline 2px;
+    color: #a62c2c;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.project__media--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project__overview--img {
+    max-width: 800px;
+}
+
+.project__para {
+    font-size: 18px;
+}
+
+.project__description--container {
+    margin-bottom: 30px;
+}
+
+.project__links--container {
+    margin-bottom: 30px;
+}
+
+.protect__stack--container {
+    margin-bottom: 30px;
+}
+
+.project__purpose--container {
+    margin-bottom: 30px;
+}
+
+.project__problems--container {
+    margin-bottom: 30px;
+}

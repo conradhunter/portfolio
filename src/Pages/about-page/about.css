@@ -22,6 +22,7 @@
 .about__page--para {
     margin-bottom: 20px;
     font-size: 18px;
+    max-width: 90%;
 }
 
 #about__contact--heading {

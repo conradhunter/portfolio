@@ -3,9 +3,23 @@ import "./home.css";
 import personalIMG from "../../Assets/my-picture.png";
 import { Link } from "react-router-dom";
 import blog from "../../Assets/blog-ss.png";
+import eportfolio from "../../Assets/client-e-port-ss.png";
+import wordleClone from "../../Assets/wordle-clone-ss.png";
+import skinGym from "../../Assets/skin-gym-ss.png";
+import jsCalculator from "../../Assets/calculator-ss.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons";
+import ShredBlog from "../projects-overview/Shred-Blog";
+import SkinGymSylvania from "../projects-overview/SkinGymSylvania";
+import JavaScriptCalculator from "../projects-overview/JavaScriptCalculator";
+import ClientEPortfolio from "../projects-overview/ClientEPortfolio";
+import WordleClone from "../projects-overview/WordleClone";
+import resume from '../../Assets/conrad-hunter-resume.pdf'
 
 const Home = () => {
   return (
@@ -16,19 +30,19 @@ const Home = () => {
           <span className="hover__text--underline">Frontend Engineer</span>
         </h1>
         <div id="icon__container">
-          <a href="">
+          <a target='_blank' href="https://github.com/conradhunter">
             <FontAwesomeIcon className="home__icon" icon={faGithub} />
           </a>
-          <a href="">
+          <a target='_blank' href="https://www.linkedin.com/in/conrad-hunter-906a57226/">
             <FontAwesomeIcon className="home__icon" icon={faLinkedin} />
           </a>
-          <a href="">
+          <a href="mailto:conrad@conradhunterdev.com">
             <FontAwesomeIcon className="home__icon" icon={faEnvelope} />
           </a>
-          <a href="">
+          <a target="_blank" href="https://twitter.com/ConradHunter10">
             <FontAwesomeIcon className="home__icon" icon={faTwitter} />
           </a>
-          <a href="">
+          <a target="_blank" href={resume}>
             <FontAwesomeIcon className="home__icon" icon={faFilePdf} />
           </a>
         </div>
@@ -101,7 +115,7 @@ const Home = () => {
                 posts are uploaded to the Firebase Firestore database and
                 displayed on the website.
               </p>
-              <Link to="/">
+              <Link to="/blog-overview" element={<ShredBlog />}>
                 <button className="project__link">View Project</button>
               </Link>
             </div>
@@ -124,26 +138,88 @@ const Home = () => {
                 and it helped me tremendously at understanding the core concepts
                 of the React library.
               </p>
-              <Link to="/">
+              <Link to="/skin-gym-sylvania" element={<SkinGymSylvania />}>
                 <button className="project__link">View Project</button>
               </Link>
             </div>
             <figure className="project__img--wrapper">
-              <img className="project__img" src={blog} alt="" />
+              <img className="project__img" src={skinGym} alt="" />
             </figure>
           </div>
           <div className="project__wrapper">
             <div className="project__info">
-              <h2 className="project__name">Project Name</h2>
+              <h2 className="project__name">Vanilla JavaScript Calculator</h2>
               <ul className="project__stack">
                 <li className="project__technology">HTML</li>
+                <li className="project__technology">CSS</li>
+                <li className="project__technology">JavaScript</li>
+              </ul>
+              <p className="project__blurb">
+                A fully functioning calculator built with vanilla JavaScript.
+                The development process allowed me to gain a core understanding
+                of the JavaScript language as a whole.
+              </p>
+              <Link
+                to="/javascript-calculator"
+                element={<JavaScriptCalculator />}
+              >
+                <button className="project__link">View Project</button>
+              </Link>
+            </div>
+            <figure className="project__img--wrapper">
+              <img className="project__img" src={jsCalculator} alt="" />
+            </figure>
+          </div>
+          <div className="project__wrapper">
+            <div className="project__info">
+              <h2 className="project__name">Wordle Clone</h2>
+              <ul className="project__stack">
                 <li className="project__technology">HTML</li>
+                <li className="project__technology">CSS</li>
+                <li className="project__technology">JavaScript</li>
+                <li className="project__technology">Rapid API</li>
+              </ul>
+              <p className="project__blurb">
+                I Know what you are thinking...A tutorial project?. Yes, but the
+                building of this project was pivotal in the process of
+                understanding JavaScript and was my first use of an API. I also
+                added my own flavour to this clone...
+              </p>
+              <Link to="/wordle-clone" element={<WordleClone />}>
+                <button className="project__link">View Project</button>
+              </Link>
+            </div>
+            <figure className="project__img--wrapper">
+              <img className="project__img" src={wordleClone} alt="" />
+            </figure>
+          </div>
+          <div className="project__wrapper">
+            <div className="project__info">
+              <h2 className="project__name">Client E-Portfolio</h2>
+              <ul className="project__stack">
                 <li className="project__technology">HTML</li>
+                <li className="project__technology">CSS</li>
+              </ul>
+              <p className="project__blurb">
+                A mock up E-portfolio built for a fictitious client using HTML
+                and CSS best practices.
+              </p>
+              <Link to="/client-eportfolio" element={<ClientEPortfolio />}>
+                <button className="project__link">View Project</button>
+              </Link>
+            </div>
+            <figure className="project__img--wrapper">
+              <img className="project__img" src={eportfolio} alt="" />
+            </figure>
+          </div>
+          <div className="project__wrapper">
+            <div className="project__info">
+              <h2 className="project__name">Fuel Economy Calculator</h2>
+              <ul className="project__stack">
                 <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
-                <li className="project__technology">HTML</li>
+                <li className="project__technology">CSS</li>
+                <li className="project__technology">JavaScript</li>
+                <li className="project__technology">RESTFUL API</li>
               </ul>
               <p className="project__blurb">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
@@ -151,12 +227,15 @@ const Home = () => {
                 corporis, consectetur tempore. Veniam tenetur necessitatibus
                 consequuntur aspernatur tempore.
               </p>
-              <Link to="/">
+              <Link
+                to="/javascript-calculator"
+                element={<JavaScriptCalculator />}
+              >
                 <button className="project__link">View Project</button>
               </Link>
             </div>
             <figure className="project__img--wrapper">
-              <img className="project__img" src={blog} alt="" />
+              <img className="project__img coming__soon" src={blog} alt="" />
             </figure>
           </div>
         </section>

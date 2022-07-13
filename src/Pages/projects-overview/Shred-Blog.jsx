@@ -35,7 +35,9 @@ const ShredBlog = () => {
               This blog app was built with a React Frontend and Firebase
               Backend. Firebase Authentication and Firestore are the 2 features
               of Firebase that are implemented. Firebase Authentication allows a
-              user to sign in with Google in o
+              user to sign in with Google and the subsequently create a blog
+              post. Blog posts are stored in the Firebase Firestore and are
+              called when the page is loaded.
             </p>
           </div>
           <div className="protect__stack--container">
@@ -54,16 +56,16 @@ const ShredBlog = () => {
               This project was built with the intention of expanding my
               knowledge of Firebase and it's core features. From this project I
               plan on creating a Skiwear clothing brand to which the blog is
-              linked to.
+              linked with.
             </p>
           </div>
           <div className="project__problems--container">
             <h3 className="project__sub-title">Problems Faced</h3>
             <p className="project__para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              exercitationem minus perferendis assumenda nihil, praesentium
-              quidem doloribus distinctio impedit neque animi eaque aliquid a
-              iure.
+              When implementing a feature which allowed the creator of a blog
+              post (and only the creator), to delete their post on the website
+              my State created an infinite loops of reads of the Firebase
+              database. This issue if not fixed, would have run up a large cost with Firebase. Uh Oh.
             </p>
           </div>
         </div>

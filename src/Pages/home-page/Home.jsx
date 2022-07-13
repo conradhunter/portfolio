@@ -222,17 +222,14 @@ const Home = () => {
                 <li className="project__technology">RESTFUL API</li>
               </ul>
               <p className="project__blurb">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                similique ducimus amet exercitationem dicta dolore numquam
-                corporis, consectetur tempore. Veniam tenetur necessitatibus
-                consequuntur aspernatur tempore.
+                Coming soon....
               </p>
-              <Link
+              {/* <Link
                 to="/javascript-calculator"
                 element={<JavaScriptCalculator />}
-              >
-                <button className="project__link">View Project</button>
-              </Link>
+              > */}
+                <button disabled className="project__link disabled">View Project</button>
+              {/* </Link> */}
             </div>
             <figure className="project__img--wrapper">
               <img className="project__img coming__soon" src={blog} alt="" />

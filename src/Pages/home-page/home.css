@@ -244,3 +244,7 @@
 .coming__soon {
   filter: blur(5px);
 }
+
+.disabled {
+  cursor: not-allowed;
+}

@@ -78,11 +78,15 @@ nav {
 
 .nav__modal--link-list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 .nav__modal--link-list li {
   width: fit-content;
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
 }
 

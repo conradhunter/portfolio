@@ -10,18 +10,18 @@ const Nav = () => {
 
   const [showMenu, setShowMenu] = useState(false);
 
-  let navMenu = document.querySelector('nav__modal');
+  let navMenu = document.querySelector('.nav__modal');
 
 
   const toggleModal = () => {
     setShowMenu(!showMenu);
+    if (showMenu === true) {
+      navMenu.style.display = 'block';
+    } else if (showMenu === false) {
+      navMenu.style.display = 'none';
+    }
   }
   
-  if (showMenu === true) {
-    navMenu.style.display = 'block';
-  } else if (showMenu === false) {
-    navMenu.style.display = 'none';
-  }
 
 
   function closeModal() {
@@ -30,7 +30,7 @@ const Nav = () => {
 
   return (
     <nav>
-      <div onClick={closeModal} id="nav__modal">
+      <div onClick={closeModal} className='nav__modal' id="nav__modal">
             <ul className="nav__modal--link-list">
                 <li>
                     <Link className='nav__modal--links' to="/about">About</Link>

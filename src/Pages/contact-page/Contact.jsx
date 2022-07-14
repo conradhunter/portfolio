@@ -23,6 +23,7 @@ const Contact = () => {
                 <a
                   className="contact__page--links"
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/conrad-hunter-906a57226/"
                 >
                   <FontAwesomeIcon
@@ -40,6 +41,7 @@ const Contact = () => {
                 <a
                   className="contact__page--links"
                   target="_blank"
+                  rel="noreferrer"
                   href="https://twitter.com/ConradHunter10"
                 >
                   <FontAwesomeIcon className="contact__icon" icon={faTwitter} />

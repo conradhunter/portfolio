@@ -39,10 +39,10 @@ const Home = () => {
           <a href="mailto:conrad@conradhunterdev.com">
             <FontAwesomeIcon className="home__icon" icon={faEnvelope} />
           </a>
-          <a target="_blank" href="https://twitter.com/ConradHunter10">
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/ConradHunter10">
             <FontAwesomeIcon className="home__icon" icon={faTwitter} />
           </a>
-          <a target="_blank" href={resume}>
+          <a target="_blank" rel="noreferrer" href={resume}>
             <FontAwesomeIcon className="home__icon" icon={faFilePdf} />
           </a>
         </div>

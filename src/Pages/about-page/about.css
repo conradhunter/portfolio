@@ -37,9 +37,14 @@
 }
 
 .about__contact--icon {
-    color: #000000;
+    color: #a62c2c;
     font-size: 32px;
     padding: 10px;
+    transition: all 300ms ease;
+}
+
+.about__contact--icon:hover {
+    color: #7d2c2c;
 }
 
 #skiing__img {

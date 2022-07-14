@@ -21,7 +21,7 @@
 
 #contact__email--link {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
     color: #000000;
     font-weight: 500;
     transition: all 300ms ease;
@@ -41,4 +41,9 @@
     font-size: 34px;
     color: #a62c2c;
     padding: 10px;
+    transition: all 300ms ease;
+}
+
+.contact__icon:hover {
+    color: #7d2c2c;
 }

@@ -16,6 +16,7 @@ const ShredBlog = () => {
                     className="project__links"
                     href="https://github.com/conradhunter/blog-app"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Github
                   </a>
@@ -25,6 +26,7 @@ const ShredBlog = () => {
                     className="project__links"
                     href="https://svd-blog-app.netlify.app"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Live Site
                   </a>

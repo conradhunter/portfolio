@@ -4,11 +4,20 @@ import './footer.css';
 import footerLogo from '../../Assets/trans.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faComputerMouse, faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp, faComputerMouse, faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { HashLink } from "react-router-hash-link";
 import resume from '../../Assets/conrad-hunter-resume.pdf';
 
 const Footer = () => {
+
+    function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+        console.log('clicked');
+      }
+
     return (
         <footer>
             <div id="links__container">
@@ -43,8 +52,8 @@ const Footer = () => {
                     </Link>
                 </figure>
                 <p id='copyright__para'>Copyright&copy; Conrad Hunter 2022</p>
-                <button id="scroll__button">
-                    <FontAwesomeIcon id='scroll__icon' icon={faComputerMouse} />
+                <button onClick={scrollToTop} id="scroll__button">
+                    <FontAwesomeIcon id='scroll__icon' icon={faChevronUp} />
                 </button>
             </div>
             <div id="socials__container">
@@ -59,16 +68,17 @@ const Footer = () => {
                     <a href="mailto:conrad@conradhunterdev.com">
                         <FontAwesomeIcon className="footer__icon" icon={faEnvelope} />
                     </a>
-                    <a target="_blank" href="https://twitter.com/ConradHunter10">
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com/ConradHunter10">
                         <FontAwesomeIcon className="footer__icon" icon={faTwitter} />
                     </a>
-                    <a target="_blank" href={resume}>
+                    <a target="_blank" rel="noreferrer" href={resume}>
                         <FontAwesomeIcon className="footer__icon" icon={faFilePdf} />
                     </a>
                 </div>
             </div>
         </footer>
     );
+
 }
 
 export default Footer;

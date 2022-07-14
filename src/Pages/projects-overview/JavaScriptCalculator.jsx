@@ -11,12 +11,22 @@ const JavaScriptCalculator = () => {
             <div className="project__links--container">
               <ul className="project__links--list">
                 <li>
-                  <a className="project__links" href="">
+                  <a
+                    className="project__links"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/conradhunter/JS-Calculator"
+                  >
                     Github
                   </a>
                 </li>
                 <li>
-                  <a className="project__links" href="">
+                  <a
+                    className="project__links"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://conradhunter.github.io/JS-Calculator/"
+                  >
                     Live Site
                   </a>
                 </li>
@@ -45,14 +55,17 @@ const JavaScriptCalculator = () => {
           <div className="project__purpose--container">
             <h3 className="project__sub-title">Project Purpose</h3>
             <p className="project__para">
-              The puspose of me undertaking this project was to dive head first into the learning of JavaScript.
+              The puspose of me undertaking this project was to dive head first
+              into the learning of JavaScript and the fundamentals of the language.
             </p>
           </div>
           <div className="project__problems--container">
             <h3 className="project__sub-title">Problems Faced</h3>
             <p className="project__para">
               Being my first JavaScript project, I had absolutely no knowledge
-              of the process or way to begin this project. This resulted in alot of trial and error, along with extensive research of the JavaScript best practices.
+              of the process or way to begin this project. This resulted in alot
+              of trial and error, along with extensive research of the
+              JavaScript best practices.
             </p>
           </div>
         </div>

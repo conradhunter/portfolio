@@ -59,6 +59,29 @@ footer {
   border: none;
 }
 
+#scroll__button {
+  animation-name: scroll-icon;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
+}
+
+@keyframes scroll-icon {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
 #footer__socials--heading {
   color: #ffffff;
   font-size: 18px;

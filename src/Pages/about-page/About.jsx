@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./about.css";
 import skiing from "../../Assets/skiing.png";
+import resume from '../../Assets/conrad-hunter-resume.pdf';
 
 const About = () => {
   return (
@@ -61,7 +62,7 @@ const About = () => {
           <h3 id="about__contact--heading">Get in touch with me!</h3>
           <ul id="about__contact--link-list">
             <li>
-              <a href="" className="about__contact--links">
+              <a href="https://www.linkedin.com/in/conrad-hunter-906a57226/" target='_blank' className="about__contact--links">
                 <FontAwesomeIcon
                   className="about__contact--icon"
                   icon={faLinkedin}
@@ -69,7 +70,7 @@ const About = () => {
               </a>
             </li>
             <li>
-              <a href="" className="about__contact--links">
+              <a href="sms:+61433444121" className="about__contact--links">
                 <FontAwesomeIcon
                   className="about__contact--icon"
                   icon={faMessage}
@@ -77,7 +78,7 @@ const About = () => {
               </a>
             </li>
             <li>
-              <a href="" className="about__contact--links">
+              <a href="https://twitter.com/ConradHunter10" target='_blank' className="about__contact--links">
                 <FontAwesomeIcon
                   className="about__contact--icon"
                   icon={faTwitter}
@@ -85,7 +86,7 @@ const About = () => {
               </a>
             </li>
           </ul>
-          <h5 id="resume__heading">Want to see my <a id="resume__link" href="">Résumé?</a></h5>
+          <h5 id="resume__heading">Want to see my <a id="resume__link" href={resume}>Résumé?</a></h5>
         </section>
       </div>
     </main>

@@ -12,12 +12,22 @@ const SkinGymSylvania = () => {
             <div className="project__links--container">
               <ul className="project__links--list">
                 <li>
-                  <a className="project__links" href="">
+                  <a
+                    className="project__links"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/conradhunter/skin-gym-react"
+                  >
                     Github
                   </a>
                 </li>
                 <li>
-                  <a className="project__links" href="">
+                  <a
+                    className="project__links"
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://skin-gym-sylvania-react.netlify.app"
+                  >
                     Live Site
                   </a>
                 </li>
@@ -27,7 +37,7 @@ const SkinGymSylvania = () => {
               I built this commercial project for a local business as my first
               contracted opportunity. I worked with the business owner to bring
               their vision to life and create a User Interface and User
-              Experiece which would drive potential clients towards the desired
+              Experience which would drive potential clients towards the desired
               sales channels.
             </p>
           </div>
@@ -52,10 +62,12 @@ const SkinGymSylvania = () => {
           <div className="project__problems--container">
             <h3 className="project__sub-title">Problems Faced</h3>
             <p className="project__para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              exercitationem minus perferendis assumenda nihil, praesentium
-              quidem doloribus distinctio impedit neque animi eaque aliquid a
-              iure.
+              Being my first contracted work and first major project using
+              react, there was alot to learn involving the syntax and methods
+              involved. Throughout the research I was able to gain an excellent
+              knowledge of the use of React Hooks and Reusable components which
+              were both concepts unknown to me before the commencements of this
+              project.
             </p>
           </div>
         </div>

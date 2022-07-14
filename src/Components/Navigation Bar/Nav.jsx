@@ -3,11 +3,27 @@ import "./nav.css";
 import logo from "../../Assets/trans.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import NavModal from "./NavModal";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
+
+  const navModal = document.getElementById('nav__modal');
+
+  function displayNavModal() {
+      navModal.style.display = 'block';
+  }
+
+
+
   return (
     <nav>
+      <NavModal />
       <div id="top__nav--container">
+        <button onClick={displayNavModal} className="hamburger__button" id="hamburger__button">
+          <FontAwesomeIcon icon ={faBars} />
+        </button>
         <figure id="logo__wrapper">
           <Link to="/">
             <img id="nav__logo" src={logo} alt="" />

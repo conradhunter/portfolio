@@ -45,6 +45,7 @@ footer {
 
 #footer__logo {
   max-width: 200px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -109,3 +110,31 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 1024px) {
+  #copyright__para {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  #links__container, #socials__container {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  #copyright__para {
+    font-size: 10px;
+  }
+} 

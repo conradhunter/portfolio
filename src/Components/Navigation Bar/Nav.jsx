@@ -1,28 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import logo from "../../Assets/trans.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import NavModal from "./NavModal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
 
-  const navModal = document.getElementById('nav__modal');
+  const [showMenu, setShowMenu] = useState(false);
 
-  function displayNavModal() {
-      navModal.style.display = 'block';
+  let navMenu = document.querySelector('nav__modal');
+
+
+  const toggleModal = () => {
+    setShowMenu(!showMenu);
+  }
+  
+  if (showMenu === true) {
+    navMenu.style.display = 'block';
+  } else if (showMenu === false) {
+    navMenu.style.display = 'none';
   }
 
 
+  function closeModal() {
+    navMenu.style.display = 'none';
+  }
 
   return (
     <nav>
-      <NavModal />
+      <div onClick={closeModal} id="nav__modal">
+            <ul className="nav__modal--link-list">
+                <li>
+                    <Link className='nav__modal--links' to="/about">About</Link>
+                </li>
+                <li>
+                    <HashLink className='nav__modal--links' to="/#projects-overview">Projects</HashLink>
+                </li>
+                <li>
+                    <Link className='nav__modal--links' to="/blog">Blog</Link>
+                </li>
+                <li>
+                    <Link className='nav__modal--links' to="/contact">Contact</Link>
+                </li>
+            </ul>
+            <button onClick={toggleModal} className="close__button" id="close__button">
+              <FontAwesomeIcon icon={faXmark}/>
+            </button>
+        </div>
       <div id="top__nav--container">
-        <button onClick={displayNavModal} className="hamburger__button" id="hamburger__button">
-          <FontAwesomeIcon icon ={faBars} />
+        <button onClick={toggleModal} className="toggle__button" id="toggle__button">
+          <FontAwesomeIcon icon={faBars}/>
         </button>
         <figure id="logo__wrapper">
           <Link to="/">

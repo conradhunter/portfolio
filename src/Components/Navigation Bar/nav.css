@@ -94,7 +94,20 @@ nav {
   text-transform: uppercase;
 }
 
-.modal__exit {
+.toggle__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 30px;
+  display: none;
+}
+
+.toggle__button:focus {
+  outline: none;
+}
+
+.close__button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -105,31 +118,10 @@ nav {
   top: 75px;
 }
 
-.hamburger__button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 30px;
-  display: none;
-}
 
-.hamburger__button:focus {
-  outline: none;
-}
 
-.cross__button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: #ffffff;
-  display: none;
-  font-size: 38px;
-}
 
-.cross__button:focus {
-  outline: none;
-}
+
 
 @media (max-width: 1200px) {
 }
@@ -139,13 +131,13 @@ nav {
   #nav__links--container {
     display: none;
   }
-  #hamburger__button {
+  #toggle__button {
     display: block;
   }
   #top__nav--container {
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 10%;
+    padding: 0 10%;
     align-items: center;
   }
   #nav__logo {

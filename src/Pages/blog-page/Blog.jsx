@@ -17,6 +17,17 @@ const Blog = () => {
     console.log("posts fetched");
   }, []);
 
+
+  // const blogImages = [
+  //   '../../Assets/trans.png',
+  //   '../../Assets/my-picture.png'
+  // ]
+
+  // function getRandomImage() {
+  //   const randomImg = Math.floor(Math.random() * blogImages.length);
+  // }
+
+ 
   return (
     <main id="blog__page--container">
       <div className="row">
@@ -31,6 +42,9 @@ const Blog = () => {
                 <p className="postBlurb">{post.blogBlurb}</p>
                 <p className="postText">{post.blogPost}</p>
                 <p className="postDate">{post.date}</p>
+                {/* BLOG IMAGE? 
+                  Create an array featuring all images of my blog posts and call each index as required? How to 
+                */}
               </div>
             );
           })}

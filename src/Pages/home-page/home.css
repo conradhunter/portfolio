@@ -248,3 +248,14 @@
 .disabled {
   cursor: not-allowed;
 }
+
+
+/* SECTION 3 (HOME BLOG BLURB) */
+
+#featured__blogs--wrapper {
+  display: flex;
+}
+
+.home__blog--post {
+  max-width: 25%;
+}

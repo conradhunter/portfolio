@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import personalIMG from "../../Assets/my-picture.png";
 import { Link } from "react-router-dom";
@@ -19,9 +19,24 @@ import SkinGymSylvania from "../projects-overview/SkinGymSylvania";
 import JavaScriptCalculator from "../projects-overview/JavaScriptCalculator";
 import ClientEPortfolio from "../projects-overview/ClientEPortfolio";
 import WordleClone from "../projects-overview/WordleClone";
-import resume from '../../Assets/conrad-hunter-resume.pdf'
+import resume from "../../Assets/conrad-hunter-resume.pdf";
+import { db } from "../../firebase";
+import { collection, getDocs } from "firebase/firestore";
 
 const Home = () => {
+  const [postLists, setPostList] = useState([]);
+
+  const postCollection = collection(db, "posts");
+
+  useEffect(() => {
+    const getPosts = async () => {
+      const data = await getDocs(postCollection);
+      setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+    getPosts();
+    console.log("posts fetched");
+  }, []);
+
   return (
     <main id="home__page--container">
       <div id="aboutMe__info--container">
@@ -30,16 +45,23 @@ const Home = () => {
           <span className="hover__text--underline">Frontend Engineer</span>
         </h1>
         <div id="icon__container">
-          <a target='_blank' href="https://github.com/conradhunter">
+          <a target="_blank" href="https://github.com/conradhunter">
             <FontAwesomeIcon className="home__icon" icon={faGithub} />
           </a>
-          <a target='_blank' href="https://www.linkedin.com/in/conrad-hunter-906a57226/">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/conrad-hunter-906a57226/"
+          >
             <FontAwesomeIcon className="home__icon" icon={faLinkedin} />
           </a>
           <a href="mailto:conrad@conradhunterdev.com">
             <FontAwesomeIcon className="home__icon" icon={faEnvelope} />
           </a>
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/ConradHunter10">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/ConradHunter10"
+          >
             <FontAwesomeIcon className="home__icon" icon={faTwitter} />
           </a>
           <a target="_blank" rel="noreferrer" href={resume}>
@@ -221,14 +243,14 @@ const Home = () => {
                 <li className="project__technology">JavaScript</li>
                 <li className="project__technology">RESTFUL API</li>
               </ul>
-              <p className="project__blurb">
-                Coming soon....
-              </p>
+              <p className="project__blurb">Coming soon....</p>
               {/* <Link
                 to="/javascript-calculator"
                 element={<JavaScriptCalculator />}
               > */}
-                <button disabled className="project__link disabled">View Project</button>
+              <button disabled className="project__link disabled">
+                View Project
+              </button>
               {/* </Link> */}
             </div>
             <figure className="project__img--wrapper">
@@ -236,7 +258,27 @@ const Home = () => {
             </figure>
           </div>
         </section>
-        <section id="featured__blogs"></section>
+        <section id="featured__blogs">
+          <h1 id="home__blogs--heading">Featured Blog Posts</h1>
+          <div id="featured__blogs--wrapper">
+            {postLists.map((post) => {
+              return (
+                <div key={post} className="home__blog--post">
+                  <h1 className="home__blog--title">{post.title}</h1>
+                  <h5 className="home__blog--postCategory">
+                    {post.postCategory}
+                  </h5>
+                  <p className="home__blog--postTags">{post.tags}</p>
+                  <p className="home__blog--postBlurb">{post.blogBlurb}</p>
+                  <p className="home__blog--postDate">{post.date}</p>
+                  {/* BLOG IMAGE? 
+                  Create an array featuring all images of my blog posts and call each index as required? .slice(0,3) for blogs
+                */}
+                </div>
+              );
+            })}
+          </div>
+        </section>
       </div>
     </main>
   );

@@ -22,11 +22,12 @@ const Nav = () => {
     }
   }
   
-
-
   function closeModal() {
     navMenu.style.display = 'none';
   }
+
+  // let disableNavModal = window.matchMedia('(max-width: 768px)');
+
 
   return (
     <nav>

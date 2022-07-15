@@ -74,6 +74,7 @@ nav {
   justify-content: center;
   display: none;
   z-index: 10;
+  position: absolute;
 }
 
 .nav__modal--link-list {

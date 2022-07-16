@@ -4,7 +4,7 @@
 
 #about__me--main-heading {
   color: #a62c2c;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 20px;
   text-decoration: underline;
 }
@@ -22,7 +22,6 @@
 .about__page--para {
     margin-bottom: 20px;
     font-size: 18px;
-    max-width: 90%;
 }
 
 #about__contact--heading {
@@ -49,6 +48,7 @@
 
 #skiing__img {
     max-width: 400px;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
     margin: 50px 0;
@@ -67,4 +67,31 @@
 #resume__link {
     color: #a62c2c;
     text-decoration: none;
+}
+
+
+
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 1024px) {
+  
+}
+@media (max-width: 768px) {
+  #skiing__img {
+    max-width: 300px;
+    width: 100%;
+  }
+  .about__page--para {
+    font-size: 16px;
+  }
+  #about__me--main-heading {
+    font-size: 32px;
+  }
+  .about__headings {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  
 }

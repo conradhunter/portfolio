@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
+
   const [showMenu, setShowMenu] = useState(false);
 
   const modalRef = useRef(null);
@@ -23,8 +24,6 @@ const Nav = () => {
   function closeModal() {
     modalRef.current.style.display = 'none';
   }
-
-
 
   return (
     <nav>

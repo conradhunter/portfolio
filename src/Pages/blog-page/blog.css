@@ -31,6 +31,7 @@
 .postTags {
     margin-bottom: 20px;
     font-size: 18px;
+    max-width: fit-content;
 }
 
 .postBlurb {
@@ -47,4 +48,46 @@
     font-style: italic;
     font-weight: 500;
 
+}
+
+
+@media (max-width: 768px) {
+  #blogs__heading {
+    font-size: 32px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .postCategory {
+    font-size: 22px;
+  }
+  .postTags {
+    font-size: 16px;
+  }
+  .postText {
+    font-size: 16px;
+  }
+  .postDate {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  #blogs__heading {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .postCategory {
+    font-size: 20px;
+  }
+  .postTags {
+    font-size: 14px;
+  }
+  .postText {
+    font-size: 14px;
+  }
+  .postDate {
+    font-size: 14px;
+  }
 }

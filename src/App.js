@@ -25,7 +25,7 @@ function App() {
           <Route exact path='/contact' element={<Contact/>} />
 
           {/* PROJECTS OVERVIEW PAGES */}
-          <Route exact path='/blog-overview' element={<ShredBlog/>} />
+          <Route exact path='/blog-app' element={<ShredBlog/>} />
           <Route exact path='/javascript-calculator' element={<JavaScriptCalculator/>} />
           <Route exact path='/fuel-economy-calculator' element={<FuelEconomyCalculator/>} />
           <Route exact path='/skin-gym-sylvania' element={<SkinGymSylvania/>} />

@@ -34,7 +34,6 @@ const Home = () => {
       setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getPosts();
-    console.log("posts fetched");
   }, []);
 
   return (
@@ -76,46 +75,50 @@ const Home = () => {
       <div className="row">
         <section id="about__me--container">
           <div id="left__container">
-            <figure>
+            <figure id="home__img--wrapper">
               <img src={personalIMG} alt="" id="home__personal--img" />
             </figure>
-            <div id="skills__container">
-              <h6 className="skills__heading">My Skills</h6>
-              <ul id="skills__list">
-                <li className="skills__list--item">HTML</li>
-                <li className="skills__list--item">CSS</li>
-                <li className="skills__list--item">JavaScript</li>
-                <li className="skills__list--item">React</li>
-                <li className="skills__list--item">Firebase</li>
-                <li className="skills__list--item">TailwindCSS</li>
-                <li className="skills__list--item">RESTFUL API</li>
-                <li className="skills__list--item">Creative Cloud</li>
-              </ul>
-            </div>
-            <div id="familiar__container">
-              <h6 className="skills__heading">Technology I am familiar with</h6>
-              <ul id="skills__list">
-                <li className="skills__list--item">Bootstap</li>
-                <li className="skills__list--item">Vue.JS</li>
-                <li className="skills__list--item">Wordpress</li>
-                <li className="skills__list--item">Shopify</li>
-                <li className="skills__list--item">AWS</li>
-              </ul>
+            <div id="flex__skills">
+              <div id="skills__container">
+                <h6 className="skills__heading">My Skills</h6>
+                <ul id="skills__list">
+                  <li className="skills__list--item">HTML</li>
+                  <li className="skills__list--item">CSS</li>
+                  <li className="skills__list--item">JavaScript</li>
+                  <li className="skills__list--item">React</li>
+                  <li className="skills__list--item">Firebase</li>
+                  <li className="skills__list--item">TailwindCSS</li>
+                  <li className="skills__list--item">RESTFUL API</li>
+                  <li className="skills__list--item">Creative Cloud</li>
+                </ul>
+              </div>
+              <div id="familiar__container">
+                <h6 className="skills__heading">
+                  Technology I am familiar with
+                </h6>
+                <ul id="skills__list">
+                  <li className="skills__list--item">Bootstap</li>
+                  <li className="skills__list--item">Vue.JS</li>
+                  <li className="skills__list--item">Wordpress</li>
+                  <li className="skills__list--item">Shopify</li>
+                  <li className="skills__list--item">AWS</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div id="right__container">
             <h2 id="who-am-i__heading">Who Am I?</h2>
-            <div>
+            <div id="intro__para--wrapper">
               <p id="intro__para">
                 I am a Frontend Developer with a passion for building User
                 friendly Interfaces which create a positive User Experience. I
                 am always working towards expanding my technology stack with the
                 addition of new languages, libraries and frameworks.
               </p>
+            </div>
               <Link id="about__page--link" to="/about">
                 See my extended bio
               </Link>
-            </div>
           </div>
         </section>
         <section id="projects-overview">
@@ -137,7 +140,7 @@ const Home = () => {
                 posts are uploaded to the Firebase Firestore database and
                 displayed on the website.
               </p>
-              <Link to="/blog-overview" element={<ShredBlog />}>
+              <Link to="/blog-app" element={<ShredBlog />}>
                 <button className="project__link">View Project</button>
               </Link>
             </div>
@@ -261,7 +264,7 @@ const Home = () => {
         <section id="featured__blogs">
           <h1 id="home__blogs--heading">Featured Blog Posts</h1>
           <div id="featured__blogs--wrapper">
-            {postLists.map((post) => {
+            {postLists.slice(0, 3).map((post) => {
               return (
                 <div key={post} className="home__blog--post">
                   <h1 className="home__blog--title">{post.title}</h1>
@@ -274,6 +277,9 @@ const Home = () => {
                   {/* BLOG IMAGE? 
                   Create an array featuring all images of my blog posts and call each index as required? .slice(0,3) for blogs
                 */}
+                  <Link className="home__blog--link" to="/blog">
+                    View Post
+                  </Link>
                 </div>
               );
             })}

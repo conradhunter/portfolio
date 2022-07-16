@@ -32,7 +32,7 @@ const About = () => {
           </p>
         </section>
         <section className="story__container">
-          <h3 className="about__headings">Me As a person</h3>
+          <h3 className="about__headings">Me as a person</h3>
           <p className="about__page--para">
             I am a 23 year old male with a HUGE travel bug. I am mostly
             interested in travel to the colder regions of the world in search of

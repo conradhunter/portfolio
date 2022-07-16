@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
 import "./blog.css";
@@ -17,16 +17,6 @@ const Blog = () => {
     console.log("posts fetched");
   }, []);
 
-
-  // const blogImages = [
-  //   '../../Assets/trans.png',
-  //   '../../Assets/my-picture.png'
-  // ]
-
-  // function getRandomImage() {
-  //   const randomImg = Math.floor(Math.random() * blogImages.length);
-  // }
-
  
   return (
     <main id="blog__page--container">
@@ -39,7 +29,6 @@ const Blog = () => {
                 <h1 className="title">{post.title}</h1>
                 <h5 className="postCategory">{post.postCategory}</h5>
                 <p className="postTags">{post.tags}</p>
-                <p className="postBlurb">{post.blogBlurb}</p>
                 <p className="postText">{post.blogPost}</p>
                 <p className="postDate">{post.date}</p>
                 {/* BLOG IMAGE? 

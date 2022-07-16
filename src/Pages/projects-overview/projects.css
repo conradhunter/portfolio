@@ -42,7 +42,8 @@
 }
 
 .project__overview--img {
-    max-width: 800px;
+    max-width: 600px;
+    width: 100%;
 }
 
 .project__para {
@@ -67,4 +68,36 @@
 
 .project__problems--container {
     margin-bottom: 30px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 1024px) {
+  
+}
+@media (max-width: 768px) {
+  .project__title {
+    font-size: 32px;
+  }
+  .project__para {
+    font-size: 16px;
+  }
+  .project__links {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .project__para {
+    font-size: 14px;
+  }
+  .project__title {
+    font-size: 30px;
+  }
+  .project__sub-title {
+    font-size: 18px;
+  }
 }

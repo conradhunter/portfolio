@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../../firebase";
 import "./blog.css";
@@ -29,11 +29,17 @@ const Blog = () => {
                 <h1 className="title">{post.title}</h1>
                 <h5 className="postCategory">{post.postCategory}</h5>
                 <p className="postTags">{post.tags}</p>
-                <p className="postText">{post.blogPost}</p>
+                <p className="postText">{post.blogParaOne}</p>
+                <p className="postText">{post.blogParaTwo}</p>
+                <p className="postText">{post.blogParaThree}</p>
+                <p className="postText">{post.blogParaFour}</p>
+                <p className="postText">{post.blogParaFive}</p>
+                <p className="postText">{post.blogParaSix}</p>
+                <p className="postText">{post.blogParaSeven}</p>
+                <p className="postText">{post.blogParaEight}</p>
+                <p className="postText">{post.blogParaNine}</p>
+                <p className="postText">{post.blogParaTen}</p>
                 <p className="postDate">{post.date}</p>
-                {/* BLOG IMAGE? 
-                  Create an array featuring all images of my blog posts and call each index as required? How to 
-                */}
               </div>
             );
           })}

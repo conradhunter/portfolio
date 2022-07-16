@@ -268,10 +268,6 @@ const Home = () => {
               return (
                 <div key={post} className="home__blog--post">
                   <h1 className="home__blog--title">{post.title}</h1>
-                  <h5 className="home__blog--postCategory">
-                    {post.postCategory}
-                  </h5>
-                  <p className="home__blog--postTags">{post.tags}</p>
                   <p className="home__blog--postBlurb">{post.blogBlurb}</p>
                   <p className="home__blog--postDate">{post.date}</p>
                   {/* BLOG IMAGE? 

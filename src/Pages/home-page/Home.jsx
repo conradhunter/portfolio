@@ -207,8 +207,7 @@ const Home = () => {
               <p className="project__blurb">
                 I Know what you are thinking...A tutorial project?. Yes, but the
                 building of this project was pivotal in the process of
-                understanding JavaScript and was my first use of an API. I also
-                added my own flavour to this clone...
+                understanding JavaScript and was my first use of an API.
               </p>
               <Link to="/wordle-clone" element={<WordleClone />}>
                 <button className="project__link">View Project</button>
@@ -254,7 +253,6 @@ const Home = () => {
               <button disabled className="project__link disabled">
                 View Project
               </button>
-              {/* </Link> */}
             </div>
             <figure className="project__img--wrapper">
               <img className="project__img coming__soon" src={blog} alt="" />

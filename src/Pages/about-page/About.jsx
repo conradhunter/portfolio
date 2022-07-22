@@ -14,7 +14,7 @@ const About = () => {
         <section className="story__container">
           <h3 className="about__headings">My Story</h3>
           <p className="about__page--para">
-            My first exposure to programming game at the age of 12, when I
+            My first exposure to programming came at the age of 12, when I
             created a small and basic mobile game using C++. In high school
             computer class I built my first basic webpages using HTML and CSS on
             Adobe Dreamweaver. I did not find a love for programming at this
@@ -86,7 +86,7 @@ const About = () => {
               </a>
             </li>
           </ul>
-          <h5 id="resume__heading">Want to see my <a id="resume__link" href={resume}>Résumé?</a></h5>
+          <h5 id="resume__heading">Want to see my <a id="resume__link" target='_blank' href={resume}>Résumé?</a></h5>
         </section>
       </div>
     </main>

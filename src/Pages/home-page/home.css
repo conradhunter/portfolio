@@ -391,4 +391,7 @@
   #left__container {
     flex-direction: column;
   }
+  #about__me--heading {
+    font-size: 28px;
+  }
 }
